@@ -1,9 +1,7 @@
 describe('login', () => {
   beforeEach(() => {
     // Arrange
-    cy.env(['URL']).then((env) => {
-      cy.visit(env.URL)
-    })
+      cy.visit('/')
   })
 
   it('Login com dados válidos deve permitir entrada no sistema', () => {    
